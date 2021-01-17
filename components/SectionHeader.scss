@@ -1,0 +1,10 @@
+.SectionHeader {
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    &__subtitle {
+        max-width: 700px;
+        display: inline-block;
+    }
+}

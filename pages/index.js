@@ -1,65 +1,65 @@
+import React from "react";
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Hero from "../components/Hero";
+import Hero2 from "../components/Hero2";
+import Hero3 from "../components/Hero3";
+import CtaSection from "../components/CtaSection";
 
-export default function Home() {
+function HomePage() {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Juan F Gonzalez</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <Hero
+        color="white"
+        size="medium"
+        backgroundImage=""
+        backgroundImageOpacity={1}
+        title="Juan F Gonzalez"
+        subtitle="Developer. Learner. Writer."
+      />
+      <Hero2
+        color="danger"
+        size="medium"
+        backgroundImage=""
+        backgroundImageOpacity={1}
+        title="Quick Intro"
+        subtitle="Hi, my name is Juan. I'm a systems engineer working as a Web UI developer at Globant. I'm constantly learning new things and applying them. Now I'm sharing what I've found to help others and understand things better."
+        image="https://uploads.divjoy.com/undraw-japan_ubgk.svg"
+        buttonText="See more"
+        buttonColor="primary"
+        buttonInverted={false}
+        buttonPath="/about"
+      />
+      <Hero3
+        color="light"
+        size="normal"
+        backgroundImage=""
+        backgroundImageOpacity={1}
+        title="My blog"
+        subtitle=" I write mainly about tech related to frontend web development and science insights to upgrade our mental software."
+        image="https://uploads.divjoy.com/undraw-beer_celebration_cefj.svg"
+        buttonText="See it here"
+        buttonColor="danger"
+        buttonInverted={false}
+        buttonPath="https://blog.juanfgonzalez.com"
+      />
+      <CtaSection
+        color="dark"
+        size="medium"
+        backgroundImage=""
+        backgroundImageOpacity={1}
+        title="Wanna talk?"
+        buttonText="Get in contact"
+        buttonColor="white"
+        buttonInverted={false}
+        buttonPath="/contact"
+      />
     </div>
   )
 }
+
+export default HomePage;
