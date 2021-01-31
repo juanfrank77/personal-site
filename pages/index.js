@@ -1,5 +1,4 @@
 import React from "react";
-import Head from 'next/head'
 import Hero from "../components/Hero";
 import Hero2 from "../components/Hero2";
 import Hero3 from "../components/Hero3";
@@ -8,11 +7,6 @@ import CtaSection from "../components/CtaSection";
 function HomePage() {
   return (
     <div className="container">
-      <Head>
-        <title>Juan F Gonzalez</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <Hero
         color="white"
         size="medium"
