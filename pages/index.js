@@ -6,23 +6,22 @@ import CtaSection from "../components/CtaSection";
 
 function HomePage() {
   return (
-    <div className="container">
+    <div className="">
       <Hero
         color="white"
-        size="medium"
+        size="large"
         backgroundImage=""
         backgroundImageOpacity={1}
-        title="Juan F Gonzalez"
-        subtitle="Developer. Learner. Writer."
+        title="Welcome to my site"
+        subtitle="Here you can find about my endeavors."
       />
       <Hero2
         color="danger"
-        size="medium"
+        size="small"
         backgroundImage=""
         backgroundImageOpacity={1}
         title="Quick Intro"
-        subtitle="Hi, my name is Juan. I'm a systems engineer working as a Web UI developer at Globant. I'm constantly learning new things and applying them. Now I'm sharing what I've found to help others and understand things better."
-        image="https://uploads.divjoy.com/undraw-japan_ubgk.svg"
+        subtitle="Hello there, my name is Juan. I'm a systems engineer working as a Web UI developer at Globant. I'm constantly learning new things and applying them. Now I'm sharing what I've found to help others and understand things better myself."
         buttonText="See more"
         buttonColor="primary"
         buttonInverted={false}
@@ -30,12 +29,11 @@ function HomePage() {
       />
       <Hero3
         color="light"
-        size="normal"
+        size="small"
         backgroundImage=""
         backgroundImageOpacity={1}
         title="My blog"
-        subtitle=" I write mainly about tech related to frontend web development and science insights to upgrade our mental software."
-        image="https://uploads.divjoy.com/undraw-beer_celebration_cefj.svg"
+        subtitle=" I write mostly about technology related to web development and insights from applied science to upgrade our mental software."
         buttonText="See it here"
         buttonColor="danger"
         buttonInverted={false}

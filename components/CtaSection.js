@@ -13,7 +13,7 @@ function CtaSection(props) {
     >
       <div className="container has-text-centered">
         <div className="columns is-vcentered is-variable is-8 is-multiline">
-          <div className="column is-narrow">
+          <div className="column mb-3">
             <SectionHeader
               title={props.title}
               subtitle={props.subtitle}
@@ -21,10 +21,10 @@ function CtaSection(props) {
               spaced={false}
             />
           </div>
-          <div className="column is-narrow">
+          <div className="column">
             <Link href={props.buttonPath}>
               <a
-                className={"button is-medium" +
+                className={"button is-medium is-rounded" +
                   (props.buttonColor ? ` is-${props.buttonColor}` : "") +
                   (props.buttonInverted ? " is-inverted" : "")
                 }

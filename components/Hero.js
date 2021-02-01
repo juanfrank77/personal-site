@@ -15,7 +15,7 @@ function Hero(props) {
           title={props.title}
           subtitle={props.subtitle}
           size={1}
-          spaced={false}
+          spaced={true}
           className="has-text-centered"
         />
       </div>
