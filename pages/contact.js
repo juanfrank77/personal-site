@@ -5,7 +5,7 @@ function ContactPage() {
   return (
     <>
       <ContactSection
-        color="link"
+        color="secondary"
         size="medium"
         backgroundImage=""
         backgroundImageOpacity={1}

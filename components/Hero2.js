@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../components/Section";
 import SectionHeader from "../components/SectionHeader";
 import Link from "next/link";
+import Image from "next/image";
 
 function Hero2(props) {
   return (
@@ -12,8 +13,8 @@ function Hero2(props) {
       backgroundImageOpacity={props.backgroundImageOpacity}
     >
       <div className="container">
-        <div className="columns is-vcentered is-mobile">
-          <div className="column is-5-desktop has-text-centered-touch">
+        <div className="columns is-vcentered">
+          <div className="column has-text-centered-touch is-5-desktop">
             <SectionHeader
               title={props.title}
               subtitle={props.subtitle}
@@ -23,7 +24,7 @@ function Hero2(props) {
             <div className="buttons is-centered">
               <Link href={props.buttonPath}>
                 <a
-                  className={"button is-medium" +
+                  className={"button is-medium is-rounded" +
                     (props.buttonColor ? ` is-${props.buttonColor}` : "") +
                     (props.buttonInverted ? " is-inverted" : "")}
                 >
@@ -33,9 +34,9 @@ function Hero2(props) {
             </div>
           </div>
           <div className="column is-1" />
-          <div className="column is-hidden-mobile">
+          <div className="column is-hidden-mobile has-text-centered">
             <figure className="image">
-              <img src={props.image} alt="about me" />
+              <Image src="/prof-2.jpeg" alt="Author's image" width={450} height={450} />
             </figure>
           </div>
         </div>
