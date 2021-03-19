@@ -9,23 +9,26 @@ function Navbar(props) {
       className={"navbar" +
         (props.color ? ` is-${props.color}` : "") +
         (props.spaced ? " is-spaced" : "")}
+      aria-label="main navigation"
     >
       <div className="container">
         <div className="navbar-brand">
           <div className="navbar-item">
             <Link href="/">
               <a>
-                <img className="image" src="/logo.png" alt="Logo" />
+                <img className="image" src="/logo.png" alt="Logo" width="110" height="50"/>
               </a>
             </Link>
           </div>
           <div
             className={"navbar-burger burger" + (menuOpen ? " is-active" : "")}
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="burger menu"
+            aria-expanded="false"
           >
-            <span />
-            <span />
-            <span />
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </div>
         </div>
         <div className={"navbar-menu" + (menuOpen ? " is-active" : "")}>

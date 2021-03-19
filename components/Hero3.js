@@ -15,7 +15,7 @@ function Hero3(props) {
         <div className="columns is-vcentered">
           <div className="column is-hidden-mobile">
             <figure className="image">
-              <img src="/blog-pic.png" alt="Blog homepage" width={500} height={500} />
+              <img src="/blog-img.png" alt="Blog homepage" width={500} height={500} />
             </figure>
           </div>
           <div className="column is-1" />

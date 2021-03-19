@@ -10,7 +10,7 @@ function Footer(props) {
       size={props.size}
       backgroundImage={props.backgroundImage}
       backgroundImageOpacity={props.backgroundImageOpacity}
-      className="footer"
+      className=""
     >
       <div className="FooterComponent__container container">
         <div className="links">

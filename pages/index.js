@@ -21,7 +21,7 @@ function HomePage() {
         backgroundImage=""
         backgroundImageOpacity={1}
         title="Quick Intro"
-        subtitle="Hello there, my name is Juan. I'm a systems engineer working as a Web UI developer at Globant. I'm constantly learning new things and applying them. Now I'm sharing what I've found to help others and understand things better myself."
+        subtitle="Hello there, my name is Juan. I'm a systems engineer working mainly as a Frontend developer. I'm constantly learning new things and applying them. Now I'm sharing what I've found to help others and understand things better myself."
         buttonText="See more"
         buttonColor="primary"
         buttonInverted={false}
